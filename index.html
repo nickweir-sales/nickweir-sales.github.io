@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nick Weir, Closer</title>
+<meta name="description" content="Remote high-ticket closer. $2.7M closed in two years. Watch real clips of me handling money, partner, fear and think-about-it objections.">
+<link rel="canonical" href="https://nickweir-sales.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nickweir-sales.github.io/">
+<meta property="og:title" content="Nick Weir, Remote High-Ticket Closer">
+<meta property="og:description" content="Remote high-ticket closer. $2.7M closed in two years. Watch real clips of me handling money, partner, fear and think-about-it objections.">
+<meta property="og:image" content="https://nickweir-sales.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nick Weir, Remote High-Ticket Closer">
+<meta name="twitter:description" content="Remote high-ticket closer. $2.7M closed in two years. Watch real clips of me handling money, partner, fear and think-about-it objections.">
+<meta name="twitter:image" content="https://nickweir-sales.github.io/img/og.jpg">
+<link rel="icon" href="img/headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: full-bleed photo hero, then a single 880px column. Light, navy and one strong blue. Deliberately one theme (the brand look). */
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --fg:#0B1A30; --muted:#5B6678; --line:#DDE2EA;
+  --accent:#1D4ED8; --accent-ink:#FFFFFF; --todo:#E8EEFF; --todo-line:#9DB2F2;
+  --ink-deep:#081222;
+  --display:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --body:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:light;
+}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:880px;margin:0 auto;padding-block:40px 64px;display:flex;flex-direction:column;gap:72px}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.04;text-wrap:balance;margin:0;letter-spacing:-.03em}
+h1{font-size:clamp(3.4rem,11vw,6.2rem)}
+h2{font-size:clamp(2.2rem,5.5vw,3.2rem);margin-bottom:22px}
+h3{font-size:1.3rem;font-weight:700;letter-spacing:-.015em}
+p{margin:0;max-width:65ch}
+.label{font:500 .72rem/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.todo{background:var(--todo);border-bottom:1.5px dashed var(--todo-line);padding:0 .2em}
+
+/* hero */
+.hero{display:flex;flex-direction:column;gap:18px}
+.hero-top{display:grid;grid-template-columns:1fr 220px;gap:28px;align-items:end}
+.hero-top>div{display:flex;flex-direction:column;gap:18px;min-width:0}
+.portrait{width:100%;max-width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:6px;display:block}
+@media (max-width:640px){.hero-top{grid-template-columns:1fr}.portrait{max-width:260px;order:-1}}
+/* photos */
+.split{display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:start}
+.split>div{min-width:0}
+.photo{width:100%;max-width:100%;border-radius:6px;display:block;object-fit:cover}
+.photo.tall{aspect-ratio:3/4}
+figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.photo.wide{aspect-ratio:2/1}
+.month{margin-top:28px;padding:24px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;display:flex;flex-direction:column;gap:12px}
+.month h3{font-size:1.45rem}
+.month p{margin:0}
+.month ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column}
+.month li{padding:12px 0;border-top:1px solid var(--line);color:var(--muted)}
+.month li b{color:var(--fg)}
+.video.has-thumb{background-color:var(--ink-deep);background-position:center 30%;background-size:cover;background-repeat:no-repeat;color:#fff;border:0}
+#mainVideo{background-image:url(img/intro-thumb.jpg)}
+#fullCall{background-image:url(img/call-thumb.jpg)}
+.video.has-thumb::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,18,34,.8) 0%,rgba(8,18,34,.15) 45%,rgba(8,18,34,0) 100%)}
+.video.has-thumb .play{position:relative;z-index:1;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.video.has-thumb .cap{z-index:1;opacity:1}
+.outside{display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:center;margin-top:28px;padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:6px}
+.outside>div{display:flex;flex-direction:column;gap:8px;min-width:0}
+.outside figure{margin:0}
+.outside video{display:block;width:100%;max-width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:4px;background:var(--ink-deep)}
+@media (max-width:560px){.outside{grid-template-columns:1fr}.outside figure{max-width:260px}}
+.video.slim{aspect-ratio:auto;min-height:150px;margin-top:0}
+.video.slim .play{width:64px;height:64px}
+.step .label{display:block;margin-bottom:2px}
+.ts{color:var(--accent);text-decoration:none;font-weight:700}
+.ts:hover{text-decoration:underline}
+.breakdown{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:0 20px}
+.breakdown:last-of-type{border-bottom:1px solid var(--line)}
+.breakdown>summary{padding:18px 0}
+.breakdown[open]>summary{border-bottom:1px solid var(--line)}
+.breakdown .steps{margin-top:4px}
+.breakdown .step:last-child{border-bottom:0}
+.breakdown .pull{margin-bottom:24px}
+.pull{margin:36px 0 0;padding:24px 0 0;border-top:1px solid var(--line);font:800 clamp(1.7rem,4.2vw,2.4rem)/1.15 var(--display);letter-spacing:-.025em;color:var(--fg);display:flex;flex-direction:column;gap:12px}
+.pull span{font:500 .72rem/1 var(--body);font-style:normal;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.shot{margin:0}
+.shot img{display:block;box-sizing:border-box;width:100%;max-width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:4px;padding:12px}
+.rank{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr 120px;gap:12px;align-items:center;font-size:.9rem;color:var(--muted)}
+.bar .track{height:14px;background:var(--line);border-radius:2px;overflow:hidden;min-width:0}
+.bar .track i{display:block;height:100%;background:var(--muted);opacity:.45}
+.bar .amt{font:500 .85rem var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.bar.me{color:var(--fg);font-weight:600}
+.bar.me .track{height:22px}
+.bar.me .track i{background:var(--accent);opacity:1}
+.bar.me .amt{color:var(--accent);font-size:1rem}
+@media (max-width:520px){.bar{grid-template-columns:76px 1fr 92px;gap:8px;font-size:.8rem}.bar .amt{font-size:.75rem}}
+.wins{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.wins li{display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid var(--line)}
+.wins li b{font-weight:600}
+.wins li span{color:var(--muted);font-size:.92rem}
+@media (max-width:640px){.wins{grid-template-columns:1fr}}
+.mentors{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px}
+.mentors ul{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:0}
+.mentors li{padding:9px 0;border-top:1px solid var(--line);color:var(--muted)}
+.mentors li b{color:var(--fg);font-weight:600}
+@media (max-width:640px){.mentors{grid-template-columns:1fr}}
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 20px;display:flex;flex-direction:column;gap:10px}
+.callout h3{font-size:1.7rem}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.duo .photo{aspect-ratio:16/9}
+@media (max-width:640px){.duo{grid-template-columns:1fr}}
+figcaption{font:500 .72rem/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:720px){.split{grid-template-columns:1fr}.split figure{max-width:420px}}
+.hero .lede{font-size:1.15rem;max-width:56ch}
+.video{position:relative;display:grid;place-items:center;aspect-ratio:16/9;max-width:100%;
+  background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:4px;text-decoration:none;overflow:hidden;margin-top:8px}
+.video .play{display:grid;place-items:center;width:84px;height:84px;border-radius:50%;background:var(--accent);color:var(--accent-ink)}
+.video .play svg{width:30px;height:30px;margin-left:5px;fill:currentColor}
+.video .cap{position:absolute;left:20px;bottom:16px;right:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:500 .8rem var(--mono);letter-spacing:.06em;text-transform:uppercase;opacity:.85}
+.video:hover .play{transform:scale(1.06)}
+.play{transition:transform .2s}
+@media (prefers-reduced-motion:reduce){.play{transition:none}}
+
+/* scoreboard */
+.board{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:6px}
+.stat{padding:22px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat b{font:800 clamp(2.2rem,6vw,3.2rem)/1 var(--display);letter-spacing:-.03em;color:var(--fg);font-variant-numeric:tabular-nums}
+.stat span{font-size:.85rem;color:var(--muted);line-height:1.4}
+@media (max-width:640px){.board{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+.fine{font-size:.8rem;color:var(--muted);margin-top:10px}
+
+/* method */
+.steps{display:grid;gap:0;counter-reset:s}
+.step{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font:800 1.8rem/1 var(--display);color:var(--accent)}
+.step div{display:flex;flex-direction:column;gap:6px;min-width:0}
+
+/* clips */
+.clips{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:720px){.clips{grid-template-columns:1fr}}
+.clip{display:flex;flex-direction:column;gap:10px;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:6px;text-decoration:none;color:var(--fg)}
+.clip q{font-family:var(--display);font-weight:800;font-size:1.4rem;line-height:1.15;letter-spacing:-.02em}
+.clip .go{margin-top:auto;font:500 .78rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+
+/* path */
+.path{display:grid;gap:0}
+.row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row .yrs{font:500 .85rem/1.6 var(--mono);color:var(--muted)}
+.row.now .yrs{color:var(--accent)}
+@media (max-width:520px){.row{grid-template-columns:1fr;gap:2px}}
+
+/* fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:640px){.fit{grid-template-columns:1fr}}
+.fit ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:8px}
+
+/* faq */
+details{border-top:1px solid var(--line);padding:16px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 1.6rem/1 var(--display);color:var(--accent)}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--surface);color:var(--fg);border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:4px;padding:36px 28px;display:flex;flex-direction:column;gap:18px}
+.contact h2{margin:0}
+.contact .row2{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:4px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;border:0;font-size:1rem;cursor:pointer;font-family:var(--body)}
+.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.contact .num{font:500 1.05rem var(--mono);user-select:all}
+footer{font-size:.8rem;color:var(--muted)}
+
+/* hero band */
+body{overflow-x:clip}
+.hero-band{position:relative;width:100vw;margin-left:calc(50% - 50vw);margin-top:-40px;min-height:clamp(480px,58vw,660px);background:var(--ink-deep) url(img/hero.jpg) right center/auto 100% no-repeat;display:flex;align-items:flex-end;color:#fff}
+.hero-band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,18,34,1) 0%,rgba(8,18,34,.92) 38%,rgba(8,18,34,.2) 62%,rgba(8,18,34,0) 80%),linear-gradient(0deg,rgba(8,18,34,.55),rgba(8,18,34,0) 45%)}
+.hero-in{position:relative;width:100%;max-width:880px;margin:0 auto;padding-block:56px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+.hero-in>*{max-width:500px}
+.hero-band .label{color:#A9C2FF}
+.hero-band h1{color:#fff;font-size:clamp(3.4rem,9vw,5.6rem)}
+.hero-band .lede{color:rgba(255,255,255,.88);font-size:1.08rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.hero-band .ghost{color:#fff;border-color:rgba(255,255,255,.45)}
+.proof{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.85rem;color:rgba(255,255,255,.75)}
+.proof b{color:#fff;font-weight:700}
+@media (max-width:900px){.hero-band{min-height:0;background-size:100% auto;background-position:center top}.hero-band::before{background:linear-gradient(180deg,rgba(8,18,34,0) 0,rgba(8,18,34,.25) 45vw,rgba(8,18,34,1) 86vw)}.hero-in{padding-top:66vw}}
+.avatar{width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:2px solid var(--surface)}
+.contact .ghost{color:var(--fg)}
+.objlist details video{display:block;width:100%;max-width:480px;aspect-ratio:16/9;border-radius:4px;margin-top:14px;background:var(--ink-deep)}
+.objlist summary{align-items:baseline;flex-wrap:wrap}
+.objtag{font:500 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-left:auto;margin-right:12px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero-band">
+    <div class="hero-in">
+      <span class="label">Remote high-ticket closer · Sydney, AU</span>
+      <h1>Nick Weir</h1>
+      <p class="lede">I close $6k to $140k coaching and education offers over the phone and on Zoom. $2.7 million in sales in the last two years, at one of Australia's biggest business-education companies, from front-line closer to Head of Success.</p>
+      <div class="proof"><span><b>$2.7M</b> in 2 years</span><span><b>#1</b> of 14 reps</span><span><b>10+ years</b> in sales</span></div>
+      <div class="hero-cta"><a class="btn" href="#objections">Watch me handle objections</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+    </div>
+  </header>
+
+  <section>
+    <span class="label">The scoreboard</span>
+    <div class="board" style="margin-top:14px">
+      <div class="stat"><b>$2.7M</b><span>Sales closed in the last two years</span></div>
+      <div class="stat"><b>$577k</b><span>Closed in July 2026, #1 of 14 reps</span></div>
+      <div class="stat"><b>$137k</b><span>Largest deal size, closed multiple times</span></div>
+      <div class="stat"><b>86%</b><span>Close rate on calls held, best month</span></div>
+    </div>
+    <p class="fine">Figures from HubSpot, Plecto and commission reports. Original screenshots available on request.</p>
+  </section>
+
+  <section>
+    <span class="label">Top of the board</span>
+    <h2>Ranked against the team</h2>
+    <figure class="shot">
+      <img src="img/hubspot-rank.jpg" alt="HubSpot report of closed deal value for one month: Nick Weir first at $577,317, ahead of 13 other reps, the next at $449,543" loading="lazy">
+      <figcaption>HubSpot, all deals closed in July 2026. #1 of 14 reps, $128k clear of second. Other reps' names removed.</figcaption>
+    </figure>
+    <div class="month">
+      <span class="label">July 2026 · The month behind the chart</span>
+      <h3>Six deals, $577k. The number I'm proudest of is two.</h3>
+      <p>Two of those calls ran three hours each.</p>
+      <p>The standout was three hours on the phone, walking laps of a park. She had planned to start the two-year program in July 2027. We worked through every objection and fear she had, she brought her timeline forward by 12 months, and she enrolled the same day. <b>$131k.</b></p>
+      <ul>
+        <li><b>$137k, two-year program.</b> She raised a partner objection while telling me she wanted to retire her husband. I challenged it, and afterwards she thanked me: it was exactly what she needed to hear.</li>
+        <li><b>$137k, two-year program.</b></li>
+        <li><b>$78k, 12-month program, plus $40k for her husband.</b> She had just lost $100k on a mentorship that went nowhere.</li>
+      </ul>
+    </div>
+    <ul class="wins">
+      <li><b>#1 in deal value and deals won</b><span>$402,368 from 16 deals in one month, 38% of the team's $1.07M total</span></li>
+      <li><b>#1 in deal value and deals won</b><span>$110,437 from 12 deals in another month</span></li>
+      <li><b>#1 on the call-quality scorecard</b><span>Highest average score on the company's automated session flow scorecard, ahead of 9 other reps</span></li>
+      <li><b>94% cash collected</b><span>$101k collected against $107k deal value in December 2025</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="label">How I run a call</span>
+    <h2>Clarity before the close</h2>
+    <div class="split"><div>
+    <div class="steps">
+      <div class="step"><div><h3>Pre-call page and homework</h3><p class="muted">Every prospect gets a page to work through before we speak, so they show up knowing why they booked. I built my last one from scratch and sent it to every booking.</p></div></div>
+      <div class="step"><div><h3>Find the real gap</h3><p class="muted">Most of the call is discovery. I get clear on where they are, where they want to be and what it costs them to stay put, and that gap is what the rest of the call is about.</p></div></div>
+      <div class="step"><div><h3>Qualify hard, disqualify fast</h3><p class="muted">If someone isn't a fit I tell them on the call. It protects the offer's reputation and keeps collection rates high.</p></div></div>
+      <div class="step"><div><h3>Close on the plan, collect on the day</h3><p class="muted">The offer is presented as the plan we just built together. I push for paid-in-full and get payment plans collected, which is why my cash numbers sit close to my deal value.</p></div></div>
+    </div>
+    </div>
+    <figure><img class="photo" src="img/on-call.jpg" alt="Nick seated at a desk on a laptop video call" loading="lazy"><figcaption>At the desk, on Zoom</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="objections">
+    <span class="label">Hear it, don't take my word for it</span>
+    <h2>Objections, live</h2>
+    <p class="muted" style="margin-bottom:8px">Real moments from real calls. Pick the objection you care about.</p>
+    <div class="objlist">
+      <details open>
+        <summary>“I'd be taking my whole wage away.” <span class="objtag">Money · investing vs spending</span></summary>
+        <p>She hated doing her own books but wouldn't pay a bookkeeper. I isolated the real fear, then reframed the cost as buying back her highest-value time.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-money-candice.jpg" src="clips/money-candice.mp4" aria-label="Clip: handling a money objection about paying for help"></video>
+      </details>
+      <details>
+        <summary>“17k? No, that's too much.” <span class="objtag">Money · pay me later</span></summary>
+        <p>He wanted to pay for coaching once the business was earning. I separated the skill from the business, then reframed the number: what would it be like to see 17k as a small amount?</p>
+        <video controls playsinline preload="metadata" poster="img/clip-17k-michael.jpg" src="clips/17k-michael.mp4" aria-label="Clip: handling a too-expensive objection"></video>
+      </details>
+      <details>
+        <summary>“It would require us to sell our shares.” <span class="objtag">Money · investing vs spending</span></summary>
+        <p>Careful long-term investors who saw it as a sacrifice. I isolated it, then reframed it as a reallocation: from an asset they can't control to a skill set they can. He landed the decision himself.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-shares-prosper.jpg" src="clips/shares-prosper.mp4" aria-label="Clip: reframing selling shares to invest"></video>
+      </details>
+      <details>
+        <summary>“That's nothing compared to 30 years of grinding.” <span class="objtag">Investing vs spending · self-sell</span></summary>
+        <p>I didn't pitch the value. I asked what made him believe it could work, and he answered his own price objection before I could.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-selfsell-mike.jpg" src="clips/selfsell-mike.mp4" aria-label="Clip: prospect sells himself on the investment"></video>
+      </details>
+      <details>
+        <summary>“There's no ROI and I'm forking over money.” <span class="objtag">Value · no guaranteed return</span></summary>
+        <p>She couldn't put a number on education and it made her nervous. I didn't argue the maths. I moved her to the one thing she can guarantee: her own commitment.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-roi-kay.jpg" src="clips/roi-kay.mp4" aria-label="Clip: handling a no-ROI objection"></video>
+      </details>
+      <details>
+        <summary>“We're very slow. We have so many other things on our mind.” <span class="objtag">Time · "after the renovation"</span></summary>
+        <p>A renovation, commitments, and a plan to start "after". I made it about priority, not time, and showed them what "after" usually turns into: a pattern.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-pattern-anahita.jpg" src="clips/pattern-anahita.mp4" aria-label="Clip: handling a too-busy timing objection"></video>
+      </details>
+      <details>
+        <summary>“We'll reflect on it within the week.” <span class="objtag">Stall · send us a summary</span></summary>
+        <p>They wanted a recap to go away and think. Before sending anything, I checked whether they believed it would work. They answered their own stall.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-summary-prosper.jpg" src="clips/summary-prosper.mp4" aria-label="Clip: handling a send-me-a-summary stall"></video>
+      </details>
+      <details>
+        <summary>“Send me an email. Just send the email.” <span class="objtag">Stall · send me an email</span></summary>
+        <p>He wanted to take it to his wife on his own. An email wouldn't carry the context, so I booked a time to walk them both through it.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-email-michael.jpg" src="clips/email-michael.mp4" aria-label="Clip: turning send-me-an-email into a joint call"></video>
+      </details>
+      <details>
+        <summary>“I'll check with my family.” <span class="objtag">Partner · decision-maker</span></summary>
+        <p>I respected it, then isolated it. If the family's on board, is he? Family aside, does he believe it works? That surfaced the real concern: the initial investment.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-family-rajesh.jpg" src="clips/family-rajesh.mp4" aria-label="Clip: isolating a check-with-my-family objection"></video>
+      </details>
+      <details>
+        <summary>“How do you trust someone?” <span class="objtag">Trust · burned before</span></summary>
+        <p>She'd been burned by a program before and lost money. I didn't defend or promise. I acknowledged it, then asked who's 50% of the equation.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-trust-poster.jpg" src="clips/trust-rose.mp4" aria-label="Clip: handling a trust objection from a prospect who had been burned before"></video>
+      </details>
+      <details>
+        <summary>“We want a stable app, not just a demo.” <span class="objtag">When-then · wait until it's ready</span></summary>
+        <p>A developer who wanted to perfect the app before getting help. I asked what would actually be different in four months, then showed him why guidance matters most before you build.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-wait-mani.jpg" src="clips/wait-mani.mp4" aria-label="Clip: handling a wait-until-it's-ready objection"></video>
+      </details>
+      <details>
+        <summary>“If the worst happens, I can come back and get the same salary.” <span class="objtag">Fear · I need a buffer first</span></summary>
+        <p>He wanted a year of safety net before starting. Buried in his own answer was the reason he didn't need one. I played his words back: so what's the actual risk?</p>
+        <video controls playsinline preload="metadata" poster="img/clip-risk-mani.jpg" src="clips/risk-mani.mp4" aria-label="Clip: reframing fear of risk using the prospect's own words"></video>
+      </details>
+      <details>
+        <summary>“What if I'm too dumb to apply this?” <span class="objtag">Limiting belief · not capable</span></summary>
+        <p>Book smart, scared she couldn't implement. I gave her permission to start at six out of ten and showed her where the support comes in.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-toodumb-kay.jpg" src="clips/toodumb-kay.mp4" aria-label="Clip: handling a limiting belief about capability"></video>
+      </details>
+      <details>
+        <summary>“I bought myself a job, basically.” <span class="objtag">Reframe · bad past decision</span></summary>
+        <p>She was stuck on a decision she couldn't undo. I moved her from regret to choice: even not doing something is doing something.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-reframe-candice.jpg" src="clips/reframe-candice.mp4" aria-label="Clip: reframing regret about a past decision"></video>
+      </details>
+      <details>
+        <summary>“They're just letting me deal with it.” <span class="objtag">Cost of inaction</span></summary>
+        <p>She thought her team was the problem. A few questions later she saw that always being available was the bottleneck, and what it was costing her.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-inaction-candice.jpg" src="clips/inaction-candice.mp4" aria-label="Clip: uncovering the cost of inaction"></video>
+      </details>
+      <details>
+        <summary>“I know I need to get into that room.” <span class="objtag">Realisation · self-close</span></summary>
+        <p>After the money and the self-doubt, she came back to why she was on the call and closed herself. My job here was to get out of the way.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-room-kay.jpg" src="clips/room-kay.mp4" aria-label="Clip: prospect reaches her own decision"></video>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">A real call, start to finish</span>
+    <h2>Sceptical going in, paid in full on the call</h2>
+    <p class="muted" style="margin-bottom:20px">A full discovery-to-close call with a first-time business buyer who opened by telling me she thought it was an MLM. Shared with her permission. Identifying details blurred and figures changed.</p>
+    <a class="video has-thumb" href="https://youtu.be/qPMIO5ymmzE" id="fullCall" target="_blank" rel="noopener">
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span>
+      <span class="cap"><span>Full call · 1h 39m</span><span>Watch on YouTube</span></span>
+    </a>
+    <details class="breakdown">
+    <summary>How the call ran: 6 key moments, with timestamps</summary>
+    <div class="steps">
+      <div class="step"><div><span class="label"><a class="ts" href="https://youtu.be/qPMIO5ymmzE?t=30" target="_blank" rel="noopener">~0:30</a> · Opening objection</span><h3>“Honestly, I'm sceptical. It feels like an MLM.”</h3><p class="muted">I welcomed it instead of defending: “I'd be worried if you weren't.” Got specific on what felt off, answered it straight (no recruiting, no downline), and told her that if it wasn't a fit I'd say so.</p></div></div>
+      <div class="step"><div><span class="label"><a class="ts" href="https://youtu.be/qPMIO5ymmzE?t=630" target="_blank" rel="noopener">~10:30</a> · Finding the real reason</span><h3>Past the surface goal</h3><p class="muted">Her first answer was “retire in 10 years, no significance.” I pushed until we found it: family overseas she'd barely seen in 15 years, and wanting to teach her grandkids that money is a tool, not a master.</p></div></div>
+      <div class="step"><div><span class="label"><a class="ts" href="https://youtu.be/qPMIO5ymmzE?t=1000" target="_blank" rel="noopener">~16:40</a> · Pre-framing</span><h3>The honest version, before any offer</h3><p class="muted">No get-rich-quick. Going from employee to owner is an identity shift, it's hard, and most people who say “I'll think about it” never come back. I made it clear we screen people too.</p></div></div>
+      <div class="step"><div><span class="label"><a class="ts" href="https://youtu.be/qPMIO5ymmzE?t=2690" target="_blank" rel="noopener">~44:50</a> · Limiting belief</span><h3>“I've never done this before.”</h3><p class="muted">Fear of failure had stalled her for two years. I asked how she learned to drive, then showed her it took one client 86 businesses to find the right one. She said that line alone gave her permission to fail.</p></div></div>
+      <div class="step"><div><span class="label"><a class="ts" href="https://youtu.be/qPMIO5ymmzE?t=4140" target="_blank" rel="noopener">~69:00</a> · Cost of doing nothing</span><h3>“I've wasted enough time already.”</h3><p class="muted">I walked her through the next 10 years if nothing changed. She landed on it herself, then told me she was braver and stronger than two years ago and that this was the right time.</p></div></div>
+      <div class="step"><div><span class="label"><a class="ts" href="https://youtu.be/qPMIO5ymmzE?t=5160" target="_blank" rel="noopener">~86:00</a> · Money objection and close</span><h3>“Where am I going to get the money?”</h3><p class="muted">Raised mid-presentation. I reframed it as resourcefulness, laid out both payment options and the refund policy plainly, and let her choose. She chose to pay in full over the payment plan.</p></div></div>
+    </div>
+    <blockquote class="pull">“I like that you haven't done the hype.”<span>The buyer, just after deciding</span></blockquote>
+    </details>
+  </section>
+
+  <section>
+    <span class="label">How I got here</span>
+    <h2>Twenty years of reading people</h2>
+    <div class="path">
+      <div class="row"><span class="yrs">First job</span><p>McDonald's. Where I learned to work fast, work a rush and turn up on time.</p></div>
+      <div class="row"><span class="yrs">~10 years</span><p>Childcare. Patience, trust, and getting parents comfortable handing over the most important thing in their life.</p></div>
+      <div class="row"><span class="yrs">10+ years</span><p>In-person sales. Thousands of face-to-face conversations with people spending real money on something they wanted.</p></div>
+      <div class="row"><span class="yrs">~3 years</span><p>Personal trainer and fitness and mindset coach. Trained and coached by Sebastian Oreb at Strength System. Getting people to commit to change and stick to it.</p></div>
+      <div class="row now"><span class="yrs">2024 – 2026</span><p>Aaron Sansoni Group. Closer, then Head of Success: closing the program suite, live call coaching, working events across Sydney, Melbourne, Brisbane and Perth. HubSpot, Aircall, Kajabi, Chargify.</p></div>
+    </div>
+    <p class="fine" style="margin-top:14px">Education: Bachelor of Science, Human Biology.</p>
+    <div class="outside">
+      <figure><video src="img/deadlift.mp4" poster="img/deadlift-poster.jpg" muted loop playsinline autoplay controls preload="metadata" aria-label="Nick deadlifting 215kg"></video></figure>
+      <div>
+        <span class="label">Outside of sales</span>
+        <h3>215kg deadlift</h3>
+        <p class="muted">Base Gym, Strength System, Sydney. Same discipline, different arena: train for years, show up on the hard days, and perform when it counts.</p>
+        <h3 style="margin-top:10px">Semi-professional BMX rider</h3>
+        <p class="muted">Featured in print. <a class="ts" href="https://www.instagram.com/p/CpSDerKJxdv/" target="_blank" rel="noopener">See the magazine feature</a></p>
+      </div>
+    </div>
+    <div class="duo">
+      <figure><img class="photo" src="img/summit-team.jpg" alt="Nick with the event team at an Aaron Sansoni Entrepreneurs Summit" loading="lazy"><figcaption>Working the Entrepreneurs Summit. I'm in the black tee.</figcaption></figure>
+      <figure><img class="photo" src="img/aaron-dinner.jpg" alt="Nick at dinner with Aaron Sansoni and the team" loading="lazy"><figcaption>Team dinner with Aaron Sansoni</figcaption></figure>
+    </div>
+    <div class="mentors">
+      <div><span class="label">Ongoing coaching</span>
+        <ul><li><b>Nick Schroder</b> · 1:1 coaching (WSA)</li><li><b>Michael Dunlevy</b> · True Sales Pro</li><li><b>Orlando Santucci</b> · Closers Cult, Bali retreat Oct 2026</li></ul></div>
+      <div><span class="label">Trained by</span>
+        <ul><li><b>Bill Walsh</b> · Objection Box, which led me to Schroder</li><li><b>Matt Ryder</b></li><li><b>Aaron Sansoni</b></li><li><b>James Bradley</b></li><li><b>Eli Sanchez</b></li><li><b>Brian Choi</b></li><li><b>Sean Wray</b></li></ul></div>
+    </div>
+    <div class="duo">
+      <figure><img class="photo" src="img/training.jpg" alt="Orlando Santucci running a training session for a room of closers" loading="lazy"><figcaption>Training session, Closers Cult retreat, Bali</figcaption></figure>
+      <figure><img class="photo" src="img/cohort.jpg" alt="The Closers Cult retreat cohort standing together on a lawn" loading="lazy"><figcaption>The October 2026 cohort. I'm front row, black polo.</figcaption></figure>
+      <figure><img class="photo" src="img/dunlevy.jpg" alt="Nick with Michael Dunlevy on a Sydney street at night" loading="lazy"><figcaption>With Michael Dunlevy, True Sales Pro</figcaption></figure>
+      <figure><img class="photo" src="img/tsp-dinner.jpg" alt="True Sales Pro members at dinner in Sydney" loading="lazy"><figcaption>True Sales Pro meetup, Sydney</figcaption></figure>
+    </div>
+    <div class="duo" style="margin-top:16px">
+      <a class="video slim" href="https://youtu.be/QHof8_GJ96Q" target="_blank" rel="noopener">
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span>
+        <span class="cap"><span>Sales Sniper meetup, Sydney</span><span>With Brian Choi and Matt Ryder</span></span>
+      </a>
+      <a class="video slim" href="https://www.youtube.com/watch?v=nCBBKcKunTs" target="_blank" rel="noopener">
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span>
+        <span class="cap"><span>True Blue Sales event</span><span>With Matt Ryder, Anthony Vizarri, Orlando Santucci and others</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">What I'm looking for</span>
+    <h2>The right offer</h2>
+    <div class="fit">
+      <div><h3 style="margin-bottom:12px">You have</h3>
+        <ul><li>A high-ticket offer that genuinely changes the buyer's situation</li><li>Inbound or set calls, though I'll fill my own calendar when they slow down</li><li>A team that tracks numbers and rewards the top of the board</li></ul></div>
+      <div><h3 style="margin-bottom:12px">You get</h3>
+        <ul><li>Fully remote, available on US hours</li><li>Open to commission-only or base plus commission on the right offer</li><li>Someone who keeps training, with 1:1 coaching still running</li></ul></div>
+    </div>
+    <div class="callout" style="margin-top:32px">
+      <h3>When marketing dries up, I don't</h3>
+      <p>I can outbound and self-set. If lead flow drops, I don't sit around waiting for the calendar to fill. I farm the CRM, re-engage old leads and no-shows, and book my own calls. My day is built around revenue-generating activity.</p>
+    </div>
+    <figure style="margin-top:32px;max-width:520px"><img class="photo" src="img/balcony.jpg" alt="Nick on a phone call, walking on a balcony" loading="lazy"><figcaption>Phone, Zoom or desk. Set up to take calls anywhere, on any time zone.</figcaption></figure>
+  </section>
+
+  <section>
+    <span class="label">Questions sales managers ask</span>
+    <h2>Before we speak</h2>
+    <details><summary>Can you really work US hours from Sydney?</summary><p>Yes. Sydney mornings line up with US afternoons and evenings, and I'm used to booking calls around buyers in other time zones.</p></details>
+    <details><summary>Do you need leads, or do you generate your own?</summary><p>Both. I close set and inbound calls, and I can outbound and self-set when lead flow is light. I work the CRM daily: old leads, no-shows and past enquiries are pipeline, not dead weight. I've also worked closely with setter teams on scripts.</p></details>
+    <details><summary>Can I hear a full call?</summary><p>Yes. Ask me on our call and I'll share a full recording with the buyer's details removed.</p></details>
+  </section>
+
+  <section class="contact" id="contact">
+    <img class="avatar" src="img/headshot.jpg" alt="Nick Weir">
+    <span class="label">Next step</span>
+    <h2>Let's talk about your offer</h2>
+    <p>Message me on WhatsApp and we'll lock in a time.</p>
+    <div class="row2">
+      <a class="btn" href="https://wa.me/61422008193?text=Hi%20Nick%2C%20I%20saw%20your%20page%20and%20would%20like%20to%20talk%20about%20a%20closing%20role." target="_blank" rel="noopener">Message me on WhatsApp</a>
+      <span class="muted" style="color:inherit;opacity:.75">WhatsApp</span>
+      <span class="num" id="wa">+61 422 008 193</span>
+      <button class="btn ghost" id="copy" type="button">Copy number</button>
+    </div>
+    <div class="row2"><span class="muted" style="color:inherit;opacity:.75">Email</span><span class="num">nicklwsales@gmail.com</span></div>
+  </section>
+
+  <footer>Nick Weir · Sydney, Australia · nicklwsales@gmail.com</footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click',function(e){
+  var t=document.getElementById('wa').textContent,b=e.currentTarget;
+  try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied'},function(){sel()})}catch(_){sel()}
+  function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('wa'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press copy'}
+});
+</script>
+
+
+</body>
+</html>
