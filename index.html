@@ -482,5 +482,21 @@ document.getElementById('copy').addEventListener('click',function(e){
 </script>
 
 
+<script data-goatcounter="https://nickweir.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+document.querySelectorAll('video[src^="clips/"]').forEach(function(v){
+  var sent=false;
+  v.addEventListener('play',function(){
+    if(sent)return; sent=true;
+    try{window.goatcounter&&window.goatcounter.count({path:'play/'+v.getAttribute('src').replace('clips/','').replace('.mp4',''),title:v.getAttribute('aria-label')||'clip',event:true});}catch(e){}
+  });
+});
+document.querySelectorAll('a[href*="calendly.com"],a[href*="wa.me"],a[href*="instagram.com"],a[href*="youtu"]').forEach(function(a){
+  a.addEventListener('click',function(){
+    var h=a.getAttribute('href'),k=h.indexOf('calendly')>-1?'calendly':h.indexOf('wa.me')>-1?'whatsapp':h.indexOf('instagram')>-1?'instagram':'youtube';
+    try{window.goatcounter&&window.goatcounter.count({path:'click/'+k,title:a.textContent.trim(),event:true});}catch(e){}
+  });
+});
+</script>
 </body>
 </html>
