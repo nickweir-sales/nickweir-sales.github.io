@@ -362,10 +362,10 @@ body{overflow-x:clip}
     <span class="label">A real call, start to finish</span>
     <h2>Sceptical going in, paid in full on the call</h2>
     <p class="muted" style="margin-bottom:20px">A full discovery-to-close call with a first-time business buyer who opened by telling me she thought it was an MLM. Shared with her permission. Her face and identifying details are blurred, and the screen-share pitch is cut so you hear the conversation.</p>
-    <a class="video has-thumb" href="https://youtu.be/zbBj-z4ajUw" id="fullCall" target="_blank" rel="noopener">
+    <button class="video has-thumb" type="button" id="fullCall" data-yt="zbBj-z4ajUw" aria-label="Play the full call, 38 minutes" style="width:100%;cursor:pointer;padding:0;font:inherit">
       <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span>
-      <span class="cap"><span>Full call · 38 min</span><span>Watch on YouTube</span></span>
-    </a>
+      <span class="cap"><span>Full call · 38 min</span><span>Play here</span></span>
+    </button>
     <details class="breakdown">
     <summary>How the call ran: 6 key moments</summary>
     <div class="steps">
@@ -473,6 +473,17 @@ body{overflow-x:clip}
 
   <footer>Nick Weir · Sydney, Australia · nicklwsales@gmail.com · <a href="https://www.instagram.com/niick__l/" target="_blank" rel="noopener">Instagram</a></footer>
 </div>
+<script>
+(function(){var b=document.getElementById('fullCall');if(!b)return;
+b.addEventListener('click',function(){
+  var f=document.createElement('iframe');
+  f.src='https://www.youtube-nocookie.com/embed/'+b.getAttribute('data-yt')+'?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+  f.title='Full sales call';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;
+  f.style.cssText='display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:4px;margin-top:8px;background:#081222';
+  b.replaceWith(f);
+  try{window.goatcounter&&window.goatcounter.count({path:'play/full-call-sandra',title:'Full call',event:true});}catch(e){}
+});})();
+</script>
 <script>
 document.getElementById('copy').addEventListener('click',function(e){
   var t=document.getElementById('wa').textContent,b=e.currentTarget;
