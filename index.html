@@ -472,9 +472,10 @@ body{overflow-x:clip}
     </div>
     <div class="row2"><span class="muted" style="color:inherit;opacity:.75">Email</span><span class="num">nicklwsales@gmail.com</span></div>
     <div class="row2"><span class="muted" style="color:inherit;opacity:.75">Instagram</span><a class="num" href="https://www.instagram.com/niick__l/" target="_blank" rel="noopener">@niick__l</a></div>
+    <div class="row2"><span class="muted" style="color:inherit;opacity:.75">LinkedIn</span><a class="num" href="https://www.linkedin.com/in/nickweir-sales" target="_blank" rel="noopener">in/nickweir-sales</a></div>
   </section>
 
-  <footer>Nick Weir · Sydney, Australia · nicklwsales@gmail.com · <a href="https://www.instagram.com/niick__l/" target="_blank" rel="noopener">Instagram</a></footer>
+  <footer>Nick Weir · Sydney, Australia · nicklwsales@gmail.com · <a href="https://www.instagram.com/niick__l/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/in/nickweir-sales" target="_blank" rel="noopener">LinkedIn</a></footer>
 </div>
 <script>
 (function(){document.querySelectorAll('#fullCall,.yt-embed').forEach(function(b){
@@ -505,9 +506,9 @@ document.querySelectorAll('video[src^="clips/"]').forEach(function(v){
     try{window.goatcounter&&window.goatcounter.count({path:'play/'+v.getAttribute('src').replace('clips/','').replace('.mp4',''),title:v.getAttribute('aria-label')||'clip',event:true});}catch(e){}
   });
 });
-document.querySelectorAll('a[href*="calendly.com"],a[href*="wa.me"],a[href*="instagram.com"],a[href*="youtu"]').forEach(function(a){
+document.querySelectorAll('a[href*="calendly.com"],a[href*="wa.me"],a[href*="instagram.com"],a[href*="linkedin.com"],a[href*="youtu"]').forEach(function(a){
   a.addEventListener('click',function(){
-    var h=a.getAttribute('href'),k=h.indexOf('calendly')>-1?'calendly':h.indexOf('wa.me')>-1?'whatsapp':h.indexOf('instagram')>-1?'instagram':'youtube';
+    var h=a.getAttribute('href'),k=h.indexOf('calendly')>-1?'calendly':h.indexOf('wa.me')>-1?'whatsapp':h.indexOf('instagram')>-1?'instagram':h.indexOf('linkedin')>-1?'linkedin':'youtube';
     try{window.goatcounter&&window.goatcounter.count({path:'click/'+k,title:a.textContent.trim(),event:true});}catch(e){}
   });
 });
