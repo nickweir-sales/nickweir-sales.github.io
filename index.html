@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nick Weir, Closer</title>
-<meta name="description" content="Remote high-ticket closer. Over $3M closed in two years. Watch real clips of me handling money, partner, fear and think-about-it objections.">
+<title>Nick Weir | Sales Professional</title>
+<meta name="description" content="Sales professional in Sydney. Over $3M closed in remote sales in the last two years. Watch real clips of me handling money, fear, trust and think-about-it objections.">
 <link rel="canonical" href="https://nickweir-sales.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nickweir-sales.github.io/">
-<meta property="og:title" content="Nick Weir, Remote High-Ticket Closer">
-<meta property="og:description" content="Remote high-ticket closer. Over $3M closed in two years. Watch real clips of me handling money, partner, fear and think-about-it objections.">
-<meta property="og:image" content="https://nickweir-sales.github.io/img/og-v2.jpg">
+<meta property="og:title" content="Nick Weir | Sales Professional">
+<meta property="og:description" content="Sales professional in Sydney. Over $3M closed in remote sales in the last two years. Watch real clips of me handling money, fear, trust and think-about-it objections.">
+<meta property="og:image" content="https://nickweir-sales.github.io/img/og-v3.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Nick Weir, Remote High-Ticket Closer">
-<meta name="twitter:description" content="Remote high-ticket closer. Over $3M closed in two years. Watch real clips of me handling money, partner, fear and think-about-it objections.">
-<meta name="twitter:image" content="https://nickweir-sales.github.io/img/og-v2.jpg">
+<meta name="twitter:title" content="Nick Weir | Sales Professional">
+<meta name="twitter:description" content="Sales professional in Sydney. Over $3M closed in remote sales in the last two years. Watch real clips of me handling money, fear, trust and think-about-it objections.">
+<meta name="twitter:image" content="https://nickweir-sales.github.io/img/og-v3.jpg">
 <link rel="icon" href="img/headshot.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
@@ -210,6 +210,11 @@ body{overflow-x:clip}
 .objgroup{font:700 .78rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:28px 0 6px;scroll-margin-top:80px}
 .objgroup:first-child{margin-top:0}
 .objfeature{margin-bottom:26px}
+.firstclip video{display:block;width:100%;max-width:720px;aspect-ratio:16/9;border-radius:6px;background:var(--ink-deep)}
+.stickybook{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:50;display:none;align-items:center;justify-content:center;gap:8px;padding:15px 18px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font:700 1rem/1 var(--body);text-decoration:none;box-shadow:0 8px 24px rgba(8,18,34,.25)}
+.totop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:51;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--fg);font:700 1.2rem/1 var(--body);cursor:pointer;box-shadow:0 6px 18px rgba(8,18,34,.18);opacity:0;pointer-events:none;transition:opacity .2s}
+.totop.show{opacity:1;pointer-events:auto}
+@media (max-width:720px){.stickybook.show{display:flex}.totop{bottom:calc(84px + env(safe-area-inset-bottom,0px))}body{padding-bottom:84px}}
 .objtag{font:500 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-left:auto;margin-right:12px}
 </style>
 </head>
@@ -219,13 +224,21 @@ body{overflow-x:clip}
 
   <header class="hero-band">
     <div class="hero-in">
-      <span class="label">Remote high-ticket closer · Sydney, AU</span>
+      <span class="label">Sales professional · Sydney, AU</span>
       <h1>Nick Weir</h1>
-      <p class="lede">I close high-ticket offers, from $6k to $140k, over the phone and on Zoom. Over $3 million in sales in the last two years, at one of Australia's biggest business-education companies, from front-line closer to Head of Success.</p>
+      <p class="lede">I close big decisions, from $6k to $140k, over the phone and on Zoom. Over $3 million in remote sales in the last two years, at one of Australia's biggest business-education companies, from front-line closer to Head of Success.</p>
       <div class="proof"><span><b>$3M+</b> in 2 years</span><span><b>#1</b> of 14 reps</span><span><b>10+ years</b> in sales</span></div>
-      <div class="hero-cta"><a class="btn" href="#objections">Watch me handle objections</a><a class="btn ghost" href="https://calendly.com/nicklwsales/30min" target="_blank" rel="noopener">Book a call</a></div>
+      <div class="hero-cta"><a class="btn" href="#watch">Watch me handle objections</a><a class="btn ghost" href="https://calendly.com/nicklwsales/30min" target="_blank" rel="noopener">Book a call</a></div>
     </div>
   </header>
+
+  <section class="firstclip" id="watch">
+    <span class="label">Hear it first</span>
+    <h2>Fear, then “Is this a scam?”</h2>
+    <p class="muted" style="margin-bottom:14px">Billy wanted it but was scared, then worried it was a scam. I dealt with the fear first, then the scam question, reframed the cost against what staying where he was would cost him, and finished on the person he'd need to become to get there. Seven minutes, start to close.</p>
+    <video controls playsinline preload="metadata" poster="img/clip-close-billy.jpg" src="clips/close-billy.mp4" aria-label="Clip: handling a fear objection and a scam concern, then reframing cost and identity"></video>
+    <p class="fine" style="margin-top:10px"><a href="#objections">17 more objections below</a></p>
+  </section>
 
   <section>
     <span class="label">The scoreboard</span>
@@ -283,15 +296,7 @@ body{overflow-x:clip}
     <span class="label">Hear it, don't take my word for it</span>
     <h2>Objections, live</h2>
     <p class="muted" style="margin-bottom:8px">Real moments from real calls. Pick the objection you care about.</p>
-        <h3 class="objgroup" style="margin-top:20px">Start here: seven minutes, objection to close</h3>
-    <div class="objlist objfeature">
-      <details open>
-        <summary>Fear, then “Is this a scam?” <span class="objtag">Fear · trust · cost · identity</span></summary>
-        <p>Billy wanted it but was scared, then worried it was a scam. I dealt with the fear first, then the scam question, reframed the cost against what staying where he was would cost him, and finished on the person he'd need to become to get there. Seven minutes, start to close.</p>
-        <video controls playsinline preload="metadata" poster="img/clip-close-billy.jpg" src="clips/close-billy.mp4" aria-label="Clip: handling a fear objection and a scam concern, then reframing cost and identity"></video>
-      </details>
-    </div>
-    <nav class="objnav" aria-label="Objection types"><a href="#obj-money">Money and value <span>5</span></a><a href="#obj-fear">Fear and trust <span>3</span></a><a href="#obj-stall">Stalls and timing <span>6</span></a><a href="#obj-decide">Getting to the decision <span>3</span></a></nav>
+        <nav class="objnav" aria-label="Objection types"><a href="#obj-money">Money and value <span>5</span></a><a href="#obj-fear">Fear and trust <span>3</span></a><a href="#obj-stall">Stalls and timing <span>6</span></a><a href="#obj-decide">Getting to the decision <span>3</span></a></nav>
     <div class="objlist">
       <h3 class="objgroup" id="obj-money">Money and value</h3>
       <details>
@@ -532,6 +537,13 @@ document.querySelectorAll('a[href*="calendly.com"],a[href*="wa.me"],a[href*="ins
     try{window.goatcounter&&window.goatcounter.count({path:'click/'+k,title:a.textContent.trim(),event:true});}catch(e){}
   });
 });
+</script>
+<a class="stickybook" id="stickybook" href="https://calendly.com/nicklwsales/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+<button class="totop" id="totop" type="button" aria-label="Back to top">&uarr;</button>
+<script>
+(function(){var t=document.getElementById('totop'),b=document.getElementById('stickybook'),c=document.getElementById('contact');
+function u(){var y=window.scrollY||0;t.classList.toggle('show',y>600);var near=c&&c.getBoundingClientRect().top<window.innerHeight;b.classList.toggle('show',y>500&&!near);}
+window.addEventListener('scroll',u,{passive:true});u();t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});})();
 </script>
 </body>
 </html>
