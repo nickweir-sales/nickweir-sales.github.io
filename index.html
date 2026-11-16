@@ -203,6 +203,13 @@ body{overflow-x:clip}
 .objlist summary{align-items:baseline;flex-wrap:wrap}
 .yt-embed{display:block;width:100%;padding:0;border:0;background:none;cursor:pointer;border-radius:4px;overflow:hidden}
 .yt-embed img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.objnav{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 18px}
+.objnav a{font:600 .8rem/1 var(--body);padding:9px 14px;border:1px solid currentColor;border-radius:999px;text-decoration:none;color:inherit;opacity:.85}
+.objnav a:hover{opacity:1;color:var(--accent)}
+.objnav a span{opacity:.55;margin-left:4px}
+.objgroup{font:700 .78rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:28px 0 6px;scroll-margin-top:80px}
+.objgroup:first-child{margin-top:0}
+.objfeature{margin-bottom:26px}
 .objtag{font:500 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-left:auto;margin-right:12px}
 </style>
 </head>
@@ -276,12 +283,17 @@ body{overflow-x:clip}
     <span class="label">Hear it, don't take my word for it</span>
     <h2>Objections, live</h2>
     <p class="muted" style="margin-bottom:8px">Real moments from real calls. Pick the objection you care about.</p>
-    <div class="objlist">
+        <h3 class="objgroup" style="margin-top:20px">Start here: seven minutes, objection to close</h3>
+    <div class="objlist objfeature">
       <details open>
         <summary>Fear, then “Is this a scam?” <span class="objtag">Fear · trust · cost · identity</span></summary>
         <p>Billy wanted it but was scared, then worried it was a scam. I dealt with the fear first, then the scam question, reframed the cost against what staying where he was would cost him, and finished on the person he'd need to become to get there. Seven minutes, start to close.</p>
         <video controls playsinline preload="metadata" poster="img/clip-close-billy.jpg" src="clips/close-billy.mp4" aria-label="Clip: handling a fear objection and a scam concern, then reframing cost and identity"></video>
       </details>
+    </div>
+    <nav class="objnav" aria-label="Objection types"><a href="#obj-money">Money and value <span>5</span></a><a href="#obj-fear">Fear and trust <span>3</span></a><a href="#obj-stall">Stalls and timing <span>6</span></a><a href="#obj-decide">Getting to the decision <span>3</span></a></nav>
+    <div class="objlist">
+      <h3 class="objgroup" id="obj-money">Money and value</h3>
       <details>
         <summary>“I'd be taking my whole wage away.” <span class="objtag">Money · investing vs spending</span></summary>
         <p>She hated doing her own books but wouldn't pay a bookkeeper. I isolated the real fear, then reframed the cost as buying back her highest-value time.</p>
@@ -307,6 +319,23 @@ body{overflow-x:clip}
         <p>She couldn't put a number on education and it made her nervous. I didn't argue the maths. I moved her to the one thing she can guarantee: her own commitment.</p>
         <video controls playsinline preload="metadata" poster="img/clip-roi-kay.jpg" src="clips/roi-kay.mp4" aria-label="Clip: handling a no-ROI objection"></video>
       </details>
+      <h3 class="objgroup" id="obj-fear">Fear and trust</h3>
+      <details>
+        <summary>“How do you trust someone?” <span class="objtag">Trust · burned before</span></summary>
+        <p>She'd been burned by a program before and lost money. I didn't defend or promise. I acknowledged it, then asked who's 50% of the equation.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-trust-poster.jpg" src="clips/trust-rose.mp4" aria-label="Clip: handling a trust objection from a prospect who had been burned before"></video>
+      </details>
+      <details>
+        <summary>“If the worst happens, I can come back and get the same salary.” <span class="objtag">Fear · I need a buffer first</span></summary>
+        <p>He wanted a year of safety net before starting. Buried in his own answer was the reason he didn't need one. I played his words back: so what's the actual risk?</p>
+        <video controls playsinline preload="metadata" poster="img/clip-risk-mani.jpg" src="clips/risk-mani.mp4" aria-label="Clip: reframing fear of risk using the prospect's own words"></video>
+      </details>
+      <details>
+        <summary>“What if I'm too dumb to apply this?” <span class="objtag">Limiting belief · not capable</span></summary>
+        <p>Book smart, scared she couldn't implement. I gave her permission to start at six out of ten and showed her where the support comes in.</p>
+        <video controls playsinline preload="metadata" poster="img/clip-toodumb-kay.jpg" src="clips/toodumb-kay.mp4" aria-label="Clip: handling a limiting belief about capability"></video>
+      </details>
+      <h3 class="objgroup" id="obj-stall">Stalls and timing</h3>
       <details>
         <summary>“We're very slow. We have so many other things on our mind.” <span class="objtag">Time · "after the renovation"</span></summary>
         <p>A renovation, commitments, and a plan to start "after". I made it about priority, not time, and showed them what "after" usually turns into: a pattern.</p>
@@ -333,25 +362,11 @@ body{overflow-x:clip}
         <video controls playsinline preload="metadata" poster="img/clip-family-rajesh.jpg" src="clips/family-rajesh.mp4" aria-label="Clip: isolating a check-with-my-family objection"></video>
       </details>
       <details>
-        <summary>“How do you trust someone?” <span class="objtag">Trust · burned before</span></summary>
-        <p>She'd been burned by a program before and lost money. I didn't defend or promise. I acknowledged it, then asked who's 50% of the equation.</p>
-        <video controls playsinline preload="metadata" poster="img/clip-trust-poster.jpg" src="clips/trust-rose.mp4" aria-label="Clip: handling a trust objection from a prospect who had been burned before"></video>
-      </details>
-      <details>
         <summary>“We want a stable app, not just a demo.” <span class="objtag">When-then · wait until it's ready</span></summary>
         <p>A developer who wanted to perfect the app before getting help. I asked what would actually be different in four months, then showed him why guidance matters most before you build.</p>
         <video controls playsinline preload="metadata" poster="img/clip-wait-mani.jpg" src="clips/wait-mani.mp4" aria-label="Clip: handling a wait-until-it's-ready objection"></video>
       </details>
-      <details>
-        <summary>“If the worst happens, I can come back and get the same salary.” <span class="objtag">Fear · I need a buffer first</span></summary>
-        <p>He wanted a year of safety net before starting. Buried in his own answer was the reason he didn't need one. I played his words back: so what's the actual risk?</p>
-        <video controls playsinline preload="metadata" poster="img/clip-risk-mani.jpg" src="clips/risk-mani.mp4" aria-label="Clip: reframing fear of risk using the prospect's own words"></video>
-      </details>
-      <details>
-        <summary>“What if I'm too dumb to apply this?” <span class="objtag">Limiting belief · not capable</span></summary>
-        <p>Book smart, scared she couldn't implement. I gave her permission to start at six out of ten and showed her where the support comes in.</p>
-        <video controls playsinline preload="metadata" poster="img/clip-toodumb-kay.jpg" src="clips/toodumb-kay.mp4" aria-label="Clip: handling a limiting belief about capability"></video>
-      </details>
+      <h3 class="objgroup" id="obj-decide">Getting to the decision</h3>
       <details>
         <summary>“I bought myself a job, basically.” <span class="objtag">Reframe · bad past decision</span></summary>
         <p>She was stuck on a decision she couldn't undo. I moved her from regret to choice: even not doing something is doing something.</p>
