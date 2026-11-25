@@ -19,7 +19,7 @@
 <meta name="twitter:image" content="https://nickweir-sales.github.io/img/og-v3.jpg">
 <link rel="icon" href="img/headshot.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap">
 <style>
 /* Layout: full-bleed photo hero, then a single 880px column. Light, navy and one strong blue. Deliberately one theme (the brand look). */
 :root{
@@ -216,6 +216,38 @@ body{overflow-x:clip}
 .totop.show{opacity:1;pointer-events:auto}
 @media (max-width:720px){.stickybook.show{display:flex}.totop{bottom:calc(84px + env(safe-area-inset-bottom,0px))}body{padding-bottom:84px}}
 .objtag{font:500 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-left:auto;margin-right:12px}
+
+@font-face{font-family:"Anton";src:url(fonts/anton.woff2) format("woff2");font-weight:400;font-display:swap}
+/* ===== Brand theme: matches LinkedIn / Facebook / Instagram posts (black, amber, Anton) ===== */
+:root{
+  --bg:#0A0A0A; --surface:#141414; --fg:#F4F4F4; --muted:#A1A1A1; --line:#262626;
+  --accent:#F5B301; --accent-ink:#0A0A0A; --todo:#2A2206; --todo-line:#8A6A00;
+  --ink-deep:#000;
+  --display:"Anton", Impact, "Arial Narrow", sans-serif;
+  --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+h1,h2{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:.98}
+h2{font-size:clamp(2.3rem,6vw,3.5rem)}
+h3{font-family:var(--body);font-weight:700}
+.stat b,.pull,.step::before{font-family:var(--display);font-weight:400;letter-spacing:.01em}
+.pull{text-transform:uppercase}
+section>.label{display:block}
+section>.label::before,.hero-in>.label::before{content:"";display:block;width:44px;height:3px;background:var(--accent);margin-bottom:14px}
+.label{font-weight:700;color:var(--accent)}
+.hero-band{background-color:#000}
+.hero-band::before{background:linear-gradient(90deg,rgba(0,0,0,1) 0%,rgba(0,0,0,.92) 38%,rgba(0,0,0,.2) 62%,rgba(0,0,0,0) 80%),linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,0) 45%)}
+@media (max-width:900px){.hero-band::before{background:linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.25) 45vw,rgba(0,0,0,1) 86vw)}}
+.hero-band .label{color:var(--accent)}
+.hero-band h1{font-size:clamp(4rem,11vw,7rem)}
+.video.has-thumb::before{background:linear-gradient(0deg,rgba(0,0,0,.8) 0%,rgba(0,0,0,.15) 45%,rgba(0,0,0,0) 100%)}
+.btn{font-weight:700}
+.wordmark{position:absolute;top:22px;left:0;right:0;z-index:2;max-width:880px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px));display:flex;justify-content:space-between;font:700 .78rem/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:#fff}
+.wordmark span{color:rgba(255,255,255,.7);font-weight:500}
+.stickybook,.totop{box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.shot img{background:#fff}
+a{color:var(--accent)}
 </style>
 </head>
 <body>
@@ -223,11 +255,12 @@ body{overflow-x:clip}
 <div class="wrap">
 
   <header class="hero-band">
+    <div class="wordmark">Nick Weir<span>Sydney</span></div>
     <div class="hero-in">
       <span class="label">Sales professional · Sydney, AU</span>
       <h1>Nick Weir</h1>
-      <p class="lede">I close big decisions, from $6k to $140k, over the phone and on Zoom. Over $3 million in remote sales in the last two years, at one of Australia's biggest business-education companies, from front-line closer to Head of Success.</p>
-      <div class="proof"><span><b>$3M+</b> in 2 years</span><span><b>#1</b> of 14 reps</span><span><b>10+ years</b> in sales</span></div>
+      <p class="lede">I close big decisions, from $6k to $140k, over the phone and on Zoom. Over $3 million in remote sales in the last two years, at one of Australia's biggest business-education companies, from front-line closer to leading the success team.</p>
+      <div class="proof"><span><b>$3M+</b> in 2 years</span><span><b>No. 1</b> of 14 reps</span><span><b>10+ years</b> in sales</span></div>
       <div class="hero-cta"><a class="btn" href="#objections">Watch me handle objections</a><a class="btn ghost" href="https://calendly.com/nicklwsales/30min" target="_blank" rel="noopener">Book a call</a></div>
     </div>
   </header>
@@ -236,7 +269,7 @@ body{overflow-x:clip}
     <span class="label">The scoreboard</span>
     <div class="board" style="margin-top:14px">
       <div class="stat"><b>$3M+</b><span>Sales closed in the last two years</span></div>
-      <div class="stat"><b>$577k</b><span>Closed in July 2026, #1 of 14 reps</span></div>
+      <div class="stat"><b>$577k</b><span>Closed in July 2026, No. 1 of 14 reps</span></div>
       <div class="stat"><b>$140k</b><span>Largest deal size, closed multiple times</span></div>
       <div class="stat"><b>86%</b><span>Close rate on calls held, best month</span></div>
     </div>
@@ -248,7 +281,7 @@ body{overflow-x:clip}
     <h2>Ranked against the team</h2>
     <figure class="shot">
       <img src="img/hubspot-rank.jpg" alt="HubSpot report of closed deal value for one month: Nick Weir first at $577,317, ahead of 13 other reps, the next at $449,543" loading="lazy">
-      <figcaption>HubSpot, all deals closed in July 2026. #1 of 14 reps, $128k clear of second. Other reps' names removed.</figcaption>
+      <figcaption>HubSpot, all deals closed in July 2026. No. 1 of 14 reps, $128k clear of second. Other reps' names removed.</figcaption>
     </figure>
     <div class="month">
       <span class="label">July 2026 · The month behind the chart</span>
@@ -262,9 +295,9 @@ body{overflow-x:clip}
       </ul>
     </div>
     <ul class="wins">
-      <li><b>#1 in deal value and deals won</b><span>$402,368 from 16 deals in one month, 38% of the team's $1.07M total</span></li>
-      <li><b>#1 in deal value and deals won</b><span>$110,437 from 12 deals in another month</span></li>
-      <li><b>#1 on the call-quality scorecard</b><span>Highest average score on the company's automated session flow scorecard, ahead of 9 other reps</span></li>
+      <li><b>No. 1 in deal value and deals won</b><span>$402,368 from 16 deals in one month, 38% of the team's $1.07M total</span></li>
+      <li><b>No. 1 in deal value and deals won</b><span>$110,437 from 12 deals in another month</span></li>
+      <li><b>No. 1 on the call-quality scorecard</b><span>Highest average score on the company's automated session flow scorecard, ahead of 9 other reps</span></li>
       <li><b>94% cash collected</b><span>$101k collected against $107k deal value in December 2025</span></li>
     </ul>
     <figure class="shot" style="margin-top:28px">
@@ -444,7 +477,7 @@ body{overflow-x:clip}
       <div class="row"><span class="yrs">~10 years</span><p>Childcare. Patience, trust, and getting parents comfortable handing over the most important thing in their life.</p></div>
       <div class="row"><span class="yrs">10+ years</span><p>In-person sales. Thousands of face-to-face conversations with people spending real money on something they wanted.</p></div>
       <div class="row"><span class="yrs">~3 years</span><p>Personal trainer and fitness and mindset coach. Trained and coached by Sebastian Oreb at Strength System. Getting people to commit to change and stick to it.</p></div>
-      <div class="row now"><span class="yrs">2024 – 2026</span><p>Aaron Sansoni Group. Closer, then Head of Success: closing the program suite, live call coaching, working events across Sydney, Melbourne, Brisbane and Perth. HubSpot, Aircall, Kajabi, Chargify.</p></div>
+      <div class="row now"><span class="yrs">2024 – 2026</span><p>Australian business-education company. Closer, then led the success team: closing the program suite, live call coaching, working events across Sydney, Melbourne, Brisbane and Perth. HubSpot, Aircall, Kajabi, Chargify.</p></div>
     </div>
     <p class="fine" style="margin-top:14px">Education: Bachelor of Science, Human Biology.</p>
     <div class="outside">
